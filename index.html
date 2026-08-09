@@ -393,6 +393,136 @@
       footer { padding-bottom: 96px; }
     }
   </style>
+  <style id="manna-model">
+    :root {
+      --ink: #241b15;
+      --ink-soft: #34261d;
+      --ink-card: #3a2b21;
+      --paper: #fffaf1;
+      --paper-soft: #f6efe2;
+      --gold: #c89a48;
+      --gold-light: #e1bd79;
+      --clay: #a84d34;
+      --clay-light: #8f402c;
+      --olive: #5c6942;
+      --muted: #7b6c5f;
+      --line: #dfd0b7;
+      --shadow: 0 30px 60px rgba(55, 36, 20, .28);
+    }
+
+    body {
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 12%, rgba(200,154,72,.12), transparent 24rem),
+        linear-gradient(rgba(255,255,255,.14), rgba(255,255,255,.14)),
+        var(--paper-soft);
+    }
+    .topbar { color: #fff8e8; background: var(--olive); }
+    nav {
+      border-bottom-color: rgba(92,105,66,.18);
+      background: rgba(246,239,226,.92);
+    }
+    .brand { color: var(--ink); }
+    .nav-links > a:not(.btn) { color: #5f5147; }
+    .nav-links > a:not(.btn):hover { color: var(--clay); }
+    .btn-primary { background: var(--clay); box-shadow: 0 10px 24px rgba(168,77,52,.22); }
+    .btn-primary:hover { background: var(--clay-light); }
+    .btn-secondary { border-color: var(--line); color: var(--ink); background: rgba(255,255,255,.45); }
+    .btn-secondary:hover { border-color: var(--olive); }
+
+    .hero {
+      min-height: auto;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 72px;
+      padding: 54px 0 82px;
+    }
+    .eyebrow { color: var(--olive); }
+    h1 {
+      color: var(--ink);
+      font-size: clamp(50px, 5.35vw, 72px);
+      line-height: .98;
+    }
+    .hero h1 em { color: var(--clay); }
+    .lead { color: #5e5046; font-size: 18px; }
+    .trustline { color: #806f61; }
+    .trustline span::before { color: var(--olive); }
+    .book-stage { min-height: 540px; }
+    .book-stage::before {
+      width: 95%;
+      background: radial-gradient(circle, rgba(215,181,109,.35), transparent 68%);
+      filter: blur(18px);
+    }
+    .cover {
+      width: min(350px, 82%);
+      max-height: 520px;
+      object-fit: contain;
+      border: 1px solid rgba(79,53,31,.22);
+      border-radius: 7px;
+      box-shadow: var(--shadow);
+      transform: rotate(1deg);
+    }
+    .edition-badge {
+      right: 4%;
+      bottom: 37px;
+      width: 104px;
+      color: #2d2118;
+      background: var(--gold);
+      border: 4px double #6f4b1f;
+      box-shadow: 0 12px 24px rgba(55,36,20,.24);
+    }
+
+    .stat-band { border-block-color: var(--line); background: rgba(255,250,241,.72); }
+    .stat { border-right-color: var(--line); }
+    .stat strong { color: var(--clay); }
+    .stat span { color: #746558; }
+
+    .paper { color: var(--ink); background: var(--paper); }
+    .paper .eyebrow { color: var(--olive); }
+    .paper .sub { color: #746558; }
+    .pillar { border-color: var(--line); background: #fffdf8; }
+    .number { color: var(--olive); border-color: #9aa27f; }
+
+    .worlds,
+    #preview {
+      color: #f7efe3;
+      background: var(--ink);
+    }
+    .worlds .eyebrow,
+    #preview .eyebrow { color: var(--gold-light); }
+    .worlds .sub,
+    #preview .sub { color: #cbbdad; }
+    .world { border-color: #4b392c; background: var(--ink-soft); }
+    .preview-card { border-color: #4b392c; background: var(--ink-soft); }
+    .preview-card:hover { border-color: var(--gold); }
+    .preview-label small { color: #cbbdad; }
+
+    .price-card { border-color: var(--line); background: white; box-shadow: 0 18px 46px rgba(73,46,27,.10); }
+    .price { color: var(--clay); }
+    .quote-section { color: white; background: var(--olive); }
+    #faq { color: var(--ink); background: var(--paper-soft); }
+    #faq .eyebrow { color: var(--olive); }
+    #faq details { border-bottom-color: var(--line); }
+    #faq details p { color: #6d5f53; }
+    #faq summary::after { color: var(--olive); }
+    .final { color: white; background: linear-gradient(135deg, #34261d, #211711); }
+    .final .eyebrow { color: var(--gold-light); }
+    footer { color: #cdbfb2; background: #18110d; border-top-color: #4b392c; }
+
+    @media (max-width: 920px) {
+      .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 38px; }
+      .book-stage { min-height: 500px; }
+      .cover { width: min(340px, 80%); max-height: 500px; }
+      .edition-badge { right: 16%; }
+    }
+
+    @media (max-width: 620px) {
+      .hero { padding: 38px 0 60px; }
+      h1 { font-size: 45px; }
+      .book-stage { min-height: 430px; }
+      .cover { width: min(290px, 76%); max-height: 420px; }
+      .edition-badge { right: 4%; bottom: 28px; width: 88px; }
+    }
+  </style>
 </head>
 <body>
   <div class="topbar">Digital Edition · 209 Pages · 30 Historically Grounded Meals · Instant Download</div>
