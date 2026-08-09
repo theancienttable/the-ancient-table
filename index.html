@@ -448,15 +448,15 @@
     .lead { color: #5e5046; font-size: 18px; }
     .trustline { color: #806f61; }
     .trustline span::before { color: var(--olive); }
-    .book-stage { min-height: 540px; }
+    .book-stage { min-height: 590px; }
     .book-stage::before {
       width: 95%;
       background: radial-gradient(circle, rgba(215,181,109,.35), transparent 68%);
       filter: blur(18px);
     }
     .cover {
-      width: min(350px, 82%);
-      max-height: 520px;
+      width: min(430px, 90%);
+      max-height: 560px;
       object-fit: contain;
       border: 1px solid rgba(79,53,31,.22);
       border-radius: 7px;
@@ -513,16 +513,16 @@
 
     @media (max-width: 920px) {
       .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 38px; }
-      .book-stage { min-height: 500px; }
-      .cover { width: min(340px, 80%); max-height: 500px; }
+      .book-stage { min-height: 520px; }
+      .cover { width: min(380px, 88%); max-height: 520px; }
       .edition-badge { right: 16%; }
     }
 
     @media (max-width: 620px) {
       .hero { padding: 38px 0 60px; }
       h1 { font-size: 45px; }
-      .book-stage { min-height: 430px; }
-      .cover { width: min(290px, 76%); max-height: 420px; }
+      .book-stage { min-height: 460px; }
+      .cover { width: min(360px, 88%); max-height: 500px; }
       .edition-badge { right: 4%; bottom: 28px; width: 88px; }
     }
   </style>
